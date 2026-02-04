@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "researchlife",
+  "productName": "Research Planner",
   "version": "1.0.0",
   "identifier": "com.dongguk-kim.researchlife",
   "build": {
