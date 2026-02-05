@@ -504,7 +504,7 @@ export default function App() {
   }, [days, busy, isEditing]);
 
   async function createEmptyDayFile(day: DayData) {
-    const template = `# ${day.ymd}\n\n## Todo\n`;
+    const template = `## Todo\n\n`;
     await writeTextFile(day.filePath, template);
     await loadWeek();
   }
@@ -593,7 +593,7 @@ export default function App() {
       // Ensure the file exists
       const fileExists = await exists(day.filePath);
       if (!fileExists) {
-        const template = `# ${day.ymd}\n\n## Todo\n`;
+        const template = `## Todo\n\n`;
         await writeTextFile(day.filePath, template);
       }
 
